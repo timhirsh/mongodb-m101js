@@ -1,7 +1,7 @@
 {
   "name": "hw2-2",
   "version": "0.0.0",
-  "description": "Highest recorded temperature for each month.",
+  "description": "Finds the highest recorded temperature for each month and adds 'month_high: true' to that document.",
   "main": "app.js",
   "author": "Tim Hirsh",
   "license": "BSD",
