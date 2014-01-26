@@ -1,0 +1,12 @@
+{
+  "name": "hw2-2",
+  "version": "0.0.0",
+  "description": "Highest recorded temperature for each month.",
+  "main": "app.js",
+  "author": "Tim Hirsh",
+  "license": "BSD",
+  "private": true,
+  "dependencies": {
+    "mongodb": "~1.3.23"
+  }
+}
