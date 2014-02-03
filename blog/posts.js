@@ -85,8 +85,16 @@ function PostsDAO(db) {
             comment['email'] = email
         }
 
-        // hw3.3 TODO
-        callback(Error("addComment Not Yet Implemented!"), null);
+        posts.findAndModify(
+            {permalink: permalink},
+            [],
+            {$push: {comments: comment}},
+            {safe: true},
+            function(err, post) {
+                if (err) { return callback(err, null); }
+                callback(null, post);
+            }
+        );
     }
 }
 
