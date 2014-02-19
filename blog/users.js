@@ -28,7 +28,7 @@ function UsersDAO(db) {
             user['email'] = email;
         }
 
-        db.collection('users').insert(user, function (err, inserted) {
+        users.insert(user, function (err, inserted) {
             return callback(err, user);
         });
     }
