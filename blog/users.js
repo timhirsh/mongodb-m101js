@@ -61,7 +61,7 @@ function UsersDAO(db) {
             }
         }
 
-        db.collection('users').findOne({'_id': username}, validateUserDoc);
+        users.findOne({'_id': username}, validateUserDoc);
     }
 }
 
